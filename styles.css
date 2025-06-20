@@ -1,0 +1,170 @@
+/* RESET & BASE STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url('xango3.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* CONTAINER PRINCIPAL */
+.main-container {
+    width: 100%;
+    max-width: 600px;
+}
+
+/* CABEÇALHO COM LINKS NAS EXTREMIDADES */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #e7be03;
+    border-radius: 10px;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+.link-esquerdo,
+.link-direito {
+    color: #e7be03;
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.link-esquerdo:focus,
+.link-direito:focus,
+.submit-btn:focus {
+    outline: 2px solid #fff200;
+    outline-offset: 2px;
+}
+
+.icone-centro {
+    width: 80px;
+}
+
+/* HERO SECTION (CAPA) */
+.hero-img {
+    width: 100%;
+    border-radius: 5px;
+    border: 2px solid #e7be03;
+}
+
+/* FORMULÁRIO */
+.uniform-box {
+    width: 100%;
+    background-color: rgba(50, 50, 50, 0.4);
+    border: 2px solid #e7be03;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-container h2 {
+    margin-bottom: 25px;
+    color: #ffffff;
+}
+
+.form-group {
+    width: 100%;
+     max-width: 400px;
+     margin-bottom: 25px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #030303;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+}
+
+.form-group textarea {
+    height: 200px;
+    width: 400px;
+}
+
+.submit-btn {
+    background-color: #4ac502;
+    color: #0d0300;
+    padding: 12px 0;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;
+    max-width: 200px;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    background-color: #3a9d02;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* RODAPÉ */
+.footer-imgs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-img {
+    max-width: 260px;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid #e7be03;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 480px) {
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icone-centro {
+        margin: 10px 0;
+    }
+
+    .form-group textarea {
+        height: 150px;
+    }
+}
+

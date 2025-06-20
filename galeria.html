@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeria de Artes Digitais</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* Adicional para galeria */
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: 2px solid #e7be03;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .galeria img {
+      width: 100%;
+      border-radius: 5px;
+      border: 2px solid #e7be03;
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+
+    .voltar-btn {
+      display: block;
+      margin: 0 auto;
+      background-color: #dbcd04;
+      color: #0d0300;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: 0.3s;
+      max-width: 200px;
+    }
+
+    .voltar-btn:hover {
+      background-color: #00bd29;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container">
+
+    <!-- MENU TOPO -->
+    <div class="container">
+      <a href="index.html" class="link-esquerdo">Voltar</a>
+      <img src="click.png" alt="Clique" class="icone-centro">
+      <a href="contato.html" class="link-direito">Contato</a>
+    </div>
+
+    <!-- GALERIA DE IMAGENS -->
+    <div class="galeria uniform-box">
+      <img src="bara1.jpg" alt="bara1">
+      <img src="Bara3.jpg" alt="bara3">
+      <img src="baras.jpg" alt="baras">
+      <img src="ogum3.jpg" alt="ogum3">
+      <img src="ogum4.jpg" alt="ogum4">
+      <img src="ogum2.jpg" alt="ogum2">
+      <img src="Oya2.jpg" alt="oya2">
+      <img src="Oya3.jpg" alt="oya3">
+      <img src="Oya1.jpg" alt="oya1">
+      <img src="xango5.jpg" alt="xango5">
+      <img src="xango3.jpg" alt="xango3">
+      <img src="xango2.jpg" alt="xango2">
+      <img src="Ode.jpg" alt="ode">
+      <img src="Ode2.jpg" alt="ode2">
+      <img src="Ode3.jpg" alt="ode3">
+      <img src="ossanha11.jpg" alt="ossanha1">
+      <img src="ossanha12.jpg" alt="ossanha2">
+      <img src="ossanha13.jpg" alt="ossanha3">
+      <img src="xapana2.jpg" alt="xapan2">
+      <img src="xapana3.jpg" alt="xapan3">
+      <img src="xapana4.jpg" alt="xapan4">
+      <img src="Obá.jpg" alt="">
+      <img src="Obá2.jpg" alt="">
+      <img src="oba4.png" alt="">
+      <img src="Oxum 2.jpg" alt="">
+      <img src="Oxum Geral.jpg" alt="">
+      <img src="Oxum 5.jpg" alt="">
+      <img src="iemanja.jpg" alt="">
+      <img src=".jpg" alt="">
+      <img src=".jpg" alt="">
+      <img src="oxala 10.jpg" alt="">
+      <img src="oxala 11.jpg" alt="">
+      <img src="oxala 12.jpg" alt="">
+      <img src="Nanã.jpg" alt="">
+      <img src="bara novo.jpg" alt="">
+      <img src="flyer 24 99.jpg" alt="">
+      <!-- Adicione mais imagens conforme necessário -->
+    </div>
+
+    <!-- BOTÃO VOLTAR -->
+    <a href="index.html" class="voltar-btn">Voltar para Início</a>
+
+  </div>
+</body>
+</html>
