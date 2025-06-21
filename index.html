@@ -51,5 +51,29 @@
   </div>
 
   <script src="script.js"></script>
+    <script>
+        // Função para incrementar o contador
+        function incrementarContador() {
+            let contador = localStorage.getItem('contadorAcessos');
+            
+            if (contador) {
+                contador = parseInt(contador) + 1;
+            } else {
+                contador = 1;
+            }
+            
+            localStorage.setItem('contadorAcessos', contador);
+            document.getElementById('contador').innerText = contador;
+            
+            // Opcional: você pode enviar esses dados para um servidor também
+            // enviarParaServidor(contador);
+        }
+        
+        // Função para exibir o contador quando a página carrega
+        window.onload = function() {
+            let contador = localStorage.getItem('contadorAcessos') || 0;
+            document.getElementById('contador').innerText = contador;
+        }
+    </script>
 </body>
 </html>
