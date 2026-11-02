@@ -14,12 +14,13 @@
   <header class="header" id="topo">
     <nav class="nav container" aria-label="Navegação principal">
       <a class="brand" href="#topo" aria-label="Studio Click, início">
-        <img class="brand-logo" src="assets/logo-studio-click.png" alt="Logo Studio Click">
+        <img class="brand-logo" src="assets/logo.png" alt="Logo Studio Click">
       </a>
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu">☰</button>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">☰</button>
       <div class="nav-links" id="menu">
-        <a href="#servicos">Serviços</a><a href="#projetos">Projetos</a><a href="#galeria">Galeria</a><a href="#contato" class="nav-cta">Solicitar orçamento</a>
+        <a href="#servicos">Serviços</a><a href="#projetos">Projetos</a><a href="#galeria-flyers">Flyers</a><a href="#videos">Vídeos</a><a href="#contato" class="nav-cta">Solicitar orçamento</a>
       </div>
+      <button class="theme-toggle" type="button" aria-label="Ativar modo escuro" title="Alternar tema"><span class="theme-icon">☾</span></button>
     </nav>
   </header>
 
@@ -35,7 +36,7 @@
         </div>
         <div class="hero-visual reveal" aria-label="Área de expertise da Studio Click">
           <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-          <div class="hero-card"><img src="assets/logo-studio-click.png" alt="Studio Click"><span>WEB · DESIGN · SUPORTE</span></div>
+          <div class="hero-card"><img src="assets/logo.png" alt="Studio Click"><span>WEB · DESIGN · SUPORTE</span></div>
         </div>
       </div>
     </section>
@@ -61,18 +62,46 @@
     <section class="section projects" id="projetos">
       <div class="container"><div class="section-heading reveal"><span class="eyebrow">Projetos selecionados</span><h2>Clientes que confiam na Studio Click</h2></div>
         <div class="project-grid">
-          <a class="project-card reveal" href="#" target="_blank" rel="noopener" aria-label="Abrir projeto do cliente 1"><img src="assets/projects/logo-cliente-1.svg" alt="Logo do cliente 1"><span><small>Projeto 01</small><strong>Cliente 1</strong></span></a>
-          <a class="project-card reveal" href="#" target="_blank" rel="noopener" aria-label="Abrir projeto do cliente 2"><img src="assets/projects/logo-cliente-2.svg" alt="Logo do cliente 2"><span><small>Projeto 02</small><strong>Cliente 2</strong></span></a>
-          <a class="project-card reveal" href="#" target="_blank" rel="noopener" aria-label="Abrir projeto do cliente 3"><img src="assets/projects/logo-cliente-3.svg" alt="Logo do cliente 3"><span><small>Projeto 03</small><strong>Cliente 3</strong></span></a>
+          <!-- Adicione aqui o endereço do site do Projeto 01, por exemplo: https://www.cliente1.com.br -->
+          <a class="project-card reveal" href="https://vandgod.github.io/smpservice" rel="noopener" aria-label="Abrir projeto do cliente 1"><img src="assets/gallery/logosmpservice.png" alt="Logo do cliente 1"><span><small>Projeto 01</small><strong>SMP Service</strong></span></a>
+          <!-- Adicione aqui o endereço do site do Projeto 02, por exemplo: https://www.cliente2.com.br -->
+          <a class="project-card reveal" href="" rel="noopener" aria-label="Abrir projeto do cliente 2"><img src="assets/projects/logo-cliente-2.svg" alt="Logo do cliente 2"><span><small>Projeto 02</small><strong>Cliente 2</strong></span></a>
+          <!-- Adicione aqui o endereço do site do Projeto 03, por exemplo: https://www.cliente3.com.br -->
+          <a class="project-card reveal" href="" rel="noopener" aria-label="Abrir projeto do cliente 3"><img src="assets/projects/logo-cliente-3.svg" alt="Logo do cliente 3"><span><small>Projeto 03</small><strong>Cliente 3</strong></span></a>
         </div>
       </div>
     </section>
 
-    <section class="section gallery-section" id="galeria"><div class="container"><div class="section-heading reveal"><span class="eyebrow">Nos bastidores</span><h2>Galeria Studio Click</h2></div><div class="gallery-grid">
-      <figure class="gallery-item reveal"><img src="assets/gallery/imagem-1.svg" alt="Imagem da galeria 1"><figcaption>Projeto 01</figcaption></figure>
-      <figure class="gallery-item reveal"><img src="assets/gallery/imagem-2.svg" alt="Imagem da galeria 2"><figcaption>Projeto 02</figcaption></figure>
-      <figure class="gallery-item reveal"><img src="assets/gallery/imagem-3.svg" alt="Imagem da galeria 3"><figcaption>Projeto 03</figcaption></figure>
-    </div></div></section>
+    <section class="section gallery-section" id="galeria-flyers">
+      <div class="container">
+        <div class="section-heading reveal"><span class="eyebrow">Flyers criados pela Studio Click</span><h2>Design que chama atenção</h2><p>Peças visuais desenvolvidas com identidade, clareza e propósito.</p></div>
+        <div class="gallery-grid">
+          <figure class="gallery-item reveal"><img src="assets/gallery/imagem-1.svg" alt="Flyer Studio Click 1"><figcaption>Flyer 01</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="assets/gallery/imagem-2.svg" alt="Flyer Studio Click 2"><figcaption>Flyer 02</figcaption></figure>
+          <figure class="gallery-item reveal"><img src="assets/gallery/imagem-3.svg" alt="Flyer Studio Click 3"><figcaption>Flyer 03</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section video-section" id="videos">
+      <div class="container">
+        <div class="section-heading reveal"><span class="eyebrow">Em movimento</span><h2>Vídeos da Studio Click</h2><p>Assista aos nossos trabalhos e conheça as soluções em ação.</p></div>
+        <div class="video-grid">
+          <article class="video-card reveal">
+            <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_1" title="Vídeo Studio Click 1" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <a href="https://youtube.com/" target="_blank" rel="noopener">Vídeo 01 <span>↗</span></a>
+          </article>
+          <article class="video-card reveal">
+            <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_2" title="Vídeo Studio Click 2" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <a href="https://youtube.com/" target="_blank" rel="noopener">Vídeo 02 <span>↗</span></a>
+          </article>
+          <article class="video-card reveal">
+            <div class="video-frame"><iframe src="https://www.youtube-nocookie.com/embed/VIDEO_ID_3" title="Vídeo Studio Click 3" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
+            <a href="https://youtube.com/" target="_blank" rel="noopener">Vídeo 03 <span>↗</span></a>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <section class="section contact" id="contato"><div class="container contact-grid">
       <div class="contact-copy reveal"><span class="eyebrow">Vamos conversar</span><h2>Conte-nos o que você precisa</h2><p>Responda algumas perguntas rápidas para recebermos seu contato pelo WhatsApp já organizado pela área do seu interesse.</p><div class="contact-method"><span>WhatsApp</span><strong>(51) 98972-7254</strong></div></div>
@@ -86,7 +115,7 @@
     </div></section>
   </main>
 
-  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#topo"><img class="brand-logo footer-logo" src="assets/logo-studio-click.png" alt="Logo Studio Click"></a><p>© <span id="year"></span> Studio Click. Todos os direitos reservados.</p><a href="#topo" aria-label="Voltar ao topo">↑</a></div></footer>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#topo"><img class="brand-logo footer-logo" src="assets/logo.png" alt="Logo Studio Click"></a><p>© <span id="year"></span> Studio Click. Todos os direitos reservados.</p><a href="#topo" aria-label="Voltar ao topo">↑</a></div></footer>
   <a class="whatsapp-float" href="https://wa.me/5551989727254" target="_blank" rel="noopener" aria-label="Conversar pelo WhatsApp">● <span>WhatsApp</span></a>
   <script src="js/script.js"></script>
 </body>

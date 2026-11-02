@@ -39,6 +39,29 @@ document.getElementById('contactForm').addEventListener('submit', event => {
   window.open(`https://wa.me/5551989727254?text=${text}`, '_blank', 'noopener');
 });
 
+const themeToggle = document.querySelector('.theme-toggle');
+const themeIcon = document.querySelector('.theme-icon');
+const savedTheme = localStorage.getItem('studio-click-theme');
+if (savedTheme === 'dark') {
+  document.documentElement.dataset.theme = 'dark';
+  themeIcon.textContent = '☀';
+  themeToggle.setAttribute('aria-label', 'Ativar modo claro');
+}
+themeToggle.addEventListener('click', () => {
+  const isDark = document.documentElement.dataset.theme === 'dark';
+  if (isDark) {
+    delete document.documentElement.dataset.theme;
+    localStorage.setItem('studio-click-theme', 'light');
+    themeIcon.textContent = '☾';
+    themeToggle.setAttribute('aria-label', 'Ativar modo escuro');
+  } else {
+    document.documentElement.dataset.theme = 'dark';
+    localStorage.setItem('studio-click-theme', 'dark');
+    themeIcon.textContent = '☀';
+    themeToggle.setAttribute('aria-label', 'Ativar modo claro');
+  }
+});
+
 document.getElementById('year').textContent = new Date().getFullYear();
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
